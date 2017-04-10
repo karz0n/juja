@@ -1,5 +1,7 @@
 package in.ua.denoming.juja.labs.lab25;
 
+import java.util.Objects;
+
 public class Journal extends Issue {
     private String year;
     private String number;
@@ -10,6 +12,20 @@ public class Journal extends Issue {
 
         this.year = year;
         this.number = number;
+    }
+
+    @Override
+    public boolean equals(Object otherObject) {
+        if (!super.equals(otherObject))
+            return false;
+
+        Journal other = (Journal) otherObject;
+        return year.equals(other.year) && number.equals(other.number);
+    }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode() + Objects.hash(year, number);
     }
 
     @Override
