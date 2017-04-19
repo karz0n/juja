@@ -5,14 +5,14 @@ import org.junit.jupiter.api.Test;
 
 class BookTest {
     @Test
-    void testToPrint() {
+    void testToString() {
         String testName = "Test Book";
         int testPageCount = 100;
         String testAuthor = "Brown J.";
 
         Issue testBook = new Book(testName, testPageCount, testAuthor);
         assertEquals(
-            testBook.toPrint(),
+            testBook.toString(),
             "Book{name=" + testName +",countPages=" + testPageCount + ",author=" + testAuthor + "}");
     }
 }
