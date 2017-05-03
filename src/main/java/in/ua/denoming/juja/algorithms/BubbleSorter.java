@@ -1,8 +1,5 @@
 package in.ua.denoming.juja.algorithms;
 
-import in.ua.denoming.juja.Array;
-import in.ua.denoming.juja.Sortable;
-
 /**
  * User: DENIS
  * Data: 18.02.2017

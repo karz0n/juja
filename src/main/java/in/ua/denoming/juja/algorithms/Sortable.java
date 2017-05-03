@@ -6,5 +6,6 @@ package in.ua.denoming.juja.algorithms;
  * Time: 17:47
  */
 public interface Sortable {
-    void sort(Array array);
+    @SuppressWarnings("UnusedReturnValue")
+    Array sort(Array array);
 }
