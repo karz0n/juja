@@ -6,8 +6,7 @@ public class Journal extends Issue {
     private String year;
     private String number;
 
-    @SuppressWarnings("WeakerAccess")
-    public Journal(String name, int countPages, String year, String number) {
+    Journal(String name, int countPages, String year, String number) {
         super(name, countPages);
 
         this.year = year;
@@ -26,11 +25,6 @@ public class Journal extends Issue {
     @Override
     public int hashCode() {
         return super.hashCode() + Objects.hash(year, number);
-    }
-
-    @Override
-    public String toPrint() {
-        return this.toString();
     }
 
     @Override

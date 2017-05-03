@@ -13,7 +13,7 @@ class JournalTest {
 
         Issue testJournal = new Journal(testName, testPageCount, testYear, testNumber);
         assertEquals(
-            testJournal.toPrint(),
+            testJournal.toString(),
             String.format("Journal{name=%s,countPages=%s,year=%s,number=%s}", testName, testPageCount, testYear, testNumber));
     }
 }

@@ -6,8 +6,7 @@ public abstract class Issue {
     private String name;
     private int countPages;
 
-    @SuppressWarnings("WeakerAccess")
-    public Issue(String name, int countPages) {
+    Issue(String name, int countPages) {
         this.name = name;
         this.countPages = countPages;
     }
@@ -31,8 +30,6 @@ public abstract class Issue {
     public int hashCode() {
         return Objects.hash(name, countPages);
     }
-
-    abstract public String toPrint();
 
     @Override
     public String toString() {
