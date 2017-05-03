@@ -1,5 +1,8 @@
 package in.ua.denoming.juja.labs.lab24;
 
+import in.ua.denoming.juja.labs.shared.Issue;
+import in.ua.denoming.juja.labs.shared.Book;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
@@ -12,7 +15,7 @@ class BookTest {
 
         Issue testBook = new Book(testName, testPageCount, testAuthor);
         assertEquals(
-            testBook.toString(),
-            "Book{name=" + testName +",countPages=" + testPageCount + ",author=" + testAuthor + "}");
+            "Book{name=" + testName +",countPages=" + testPageCount + ",author=" + testAuthor + "}",
+            testBook.toString());
     }
 }

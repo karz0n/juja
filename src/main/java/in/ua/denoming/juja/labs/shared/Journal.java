@@ -1,4 +1,4 @@
-package in.ua.denoming.juja.labs.lab26;
+package in.ua.denoming.juja.labs.shared;
 
 import java.util.Objects;
 
@@ -6,7 +6,7 @@ public class Journal extends Issue {
     private String yearJournal;
     private String numberJournal;
 
-    Journal(String name, int countPages, String yearJournal, String numberJournal) {
+    public Journal(String name, int countPages, String yearJournal, String numberJournal) {
         super(name, countPages);
 
         this.yearJournal = yearJournal;

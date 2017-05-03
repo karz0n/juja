@@ -1,5 +1,8 @@
 package in.ua.denoming.juja.labs.lab25;
 
+import in.ua.denoming.juja.labs.shared.Issue;
+import in.ua.denoming.juja.labs.shared.Journal;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
@@ -13,7 +16,7 @@ class JournalTest {
 
         Issue testJournal = new Journal(testName, testPageCount, testYear, testNumber);
         assertEquals(
-            testJournal.toString(),
-            String.format("Journal{name=%s,countPages=%s,year=%s,number=%s}", testName, testPageCount, testYear, testNumber));
+            String.format("Journal{name=%s,countPages=%s,year=%s,number=%s}", testName, testPageCount, testYear, testNumber),
+            testJournal.toString());
     }
 }

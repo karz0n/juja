@@ -1,9 +1,9 @@
-package in.ua.denoming.juja.labs.lab24;
+package in.ua.denoming.juja.labs.shared;
 
-class Book extends Issue {
+public class Book extends Issue {
     private String author;
 
-    Book(String name, int countPages, String author) {
+    public Book(String name, int countPages, String author) {
         super(name, countPages);
 
         this.author = author;

@@ -1,5 +1,7 @@
 package in.ua.denoming.juja.labs.lab26;
 
+import in.ua.denoming.juja.labs.shared.Issue;
+
 class Library {
     static String printCatalog(Issue[] catalog) {
         StringBuilder builder = new StringBuilder();

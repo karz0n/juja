@@ -1,5 +1,9 @@
 package in.ua.denoming.juja.labs.lab26;
 
+import in.ua.denoming.juja.labs.shared.Issue;
+import in.ua.denoming.juja.labs.shared.Journal;
+import in.ua.denoming.juja.labs.shared.Book;
+
 public class App {
     public static void main(String[] args) {
         Issue issues[] = {
