@@ -5,7 +5,7 @@ import java.util.Map;
 
 /**
  * User: DENIS
- * Data: 18.02.2017
+ * Date: 18.02.2017
  * Time: 13:29
  */
 public class Statistic {

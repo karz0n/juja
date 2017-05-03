@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * User: DENIS
- * Data: 18.02.2017
+ * Date: 18.02.2017
  * Time: 13:31
  */
 public class BasicArray<T extends Comparable<T>> implements Array<T> {

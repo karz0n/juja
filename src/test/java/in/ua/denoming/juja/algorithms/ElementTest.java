@@ -12,7 +12,7 @@ import java.util.regex.Pattern;
 
 /**
  * User: DENIS
- * Data: 18.02.2017
+ * Date: 18.02.2017
  * Time: 11:00
  */
 class ElementTest {

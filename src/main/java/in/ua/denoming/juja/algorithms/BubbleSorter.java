@@ -2,7 +2,7 @@ package in.ua.denoming.juja.algorithms;
 
 /**
  * User: DENIS
- * Data: 18.02.2017
+ * Date: 18.02.2017
  * Time: 17:57
  */
 public class BubbleSorter implements Sortable {

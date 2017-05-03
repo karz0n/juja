@@ -7,7 +7,7 @@ import org.junit.jupiter.api.BeforeEach;
 
 /**
  * User: DENIS
- * Data: 06.03.2017
+ * Date: 06.03.2017
  * Time: 20:59
  */
 class BubbleSortTest extends SortTest {

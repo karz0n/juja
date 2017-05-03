@@ -4,7 +4,7 @@ import java.util.Random;
 
 /**
  * User: DENIS
- * Data: 03.03.2017
+ * Date: 03.03.2017
  * Time: 21:19
  */
 abstract class SortTest {

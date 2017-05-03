@@ -4,7 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * User: DENIS
- * Data: 18.02.2017
+ * Date: 18.02.2017
  * Time: 15:53
  */
 public class BasicArrayRecorder<T extends Comparable<T>> implements ArrayRecorder<T> {
