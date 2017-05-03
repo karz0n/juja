@@ -1,4 +1,4 @@
-package in.ua.denoming.juja;
+package in.ua.denoming.juja.algorithms;
 
 import java.util.HashMap;
 import java.util.Map;

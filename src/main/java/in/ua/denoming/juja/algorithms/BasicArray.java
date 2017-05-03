@@ -1,4 +1,4 @@
-package in.ua.denoming.juja;
+package in.ua.denoming.juja.algorithms;
 
 import java.util.Arrays;
 
@@ -27,6 +27,7 @@ public class BasicArray<T extends Comparable<T>> implements Array<T> {
         }
     }
 
+    @SuppressWarnings("unused")
     public BasicArray(Element<T>[] values) {
         this(values.length);
         for (int i = 0; i < values.length; i++) {
@@ -34,7 +35,7 @@ public class BasicArray<T extends Comparable<T>> implements Array<T> {
         }
     }
 
-    @SuppressWarnings("WeakerAccess")
+    @SuppressWarnings("unused")
     public BasicArray(Array<T> other) {
         this(other.size());
         for (int i = 0; i < other.size(); i++) {

@@ -1,10 +1,9 @@
-package in.ua.denoming.juja;
+package in.ua.denoming.juja.algorithms;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.Random;
@@ -23,13 +22,8 @@ class ElementTest {
     private static final Integer DEFAULT_VALUE = 0;
 
     @BeforeEach
-    public void setUp() {
+    void setUp() {
         element = new Element<>(DEFAULT_ID, DEFAULT_VALUE);
-    }
-
-    @AfterEach
-    public void tearDown() {
-        element = null;
     }
 
     @Test

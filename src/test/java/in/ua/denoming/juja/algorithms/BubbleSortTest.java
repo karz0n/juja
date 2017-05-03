@@ -1,18 +1,16 @@
-package in.ua.denoming.juja;
+package in.ua.denoming.juja.algorithms;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
 
-import in.ua.denoming.juja.algorithms.BubbleSorter;
-
 /**
  * User: DENIS
  * Data: 06.03.2017
  * Time: 20:59
  */
-public class BubbleSortTest extends SortTest {
+class BubbleSortTest extends SortTest {
     private Sortable algorithm;
     private Array<Integer> dataToSort;
     private ArrayRecorder<Integer> recorder;

@@ -1,4 +1,4 @@
-package in.ua.denoming.juja;
+package in.ua.denoming.juja.algorithms;
 
 /**
  * User: DENIS
@@ -6,5 +6,5 @@ package in.ua.denoming.juja;
  * Time: 17:47
  */
 public interface Sortable {
-    Array sort(Array array);
+    void sort(Array array);
 }
