@@ -25,6 +25,9 @@ public class Book extends Issue {
 
     @Override
     public String toString() {
-        return getClass().getSimpleName() + "{" + super.toString() + ",author=" + author + "}";
+        return getClass().getSimpleName() + "{"
+            + "name=" + getName()
+            + ",countPages=" + getCountPages()
+            + ",author=" + author + "}";
     }
 }

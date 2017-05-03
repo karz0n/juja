@@ -4,6 +4,7 @@ import in.ua.denoming.juja.labs.shared.Issue;
 import in.ua.denoming.juja.labs.shared.Book;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 import org.junit.jupiter.api.Test;
 
 class BookTest {
@@ -14,8 +15,11 @@ class BookTest {
         String testAuthor = "Brown J.";
 
         Issue testBook = new Book(testName, testPageCount, testAuthor);
-        assertEquals(
-            "Book{name=" + testName +",countPages=" + testPageCount + ",author=" + testAuthor + "}",
-            testBook.toString());
+
+        String expectedString = "Book{name=" + testName +",countPages=" + testPageCount + ",author=" + testAuthor + "}";
+        String actualString = testBook.toString();
+
+        assertNotNull(actualString);
+        assertEquals(expectedString, testBook.toString());
     }
 }

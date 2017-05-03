@@ -6,14 +6,16 @@ public class Issue {
     private String name;
     private int countPages;
 
-    Issue(String name, int countPages) {
+    public Issue(String name, int countPages) {
         this.name = name;
         this.countPages = countPages;
     }
 
     @Override
     public String toString() {
-        return "name=" + getName() + ",countPages=" + getCountPages();
+        return getClass().getSimpleName() + "{"
+            + "name=" + getName()
+            + ",countPages=" + getCountPages() + "}";
     }
 
     @Override
@@ -36,11 +38,12 @@ public class Issue {
         return name.equals(issue.name) && countPages == issue.countPages;
     }
 
-    int getCountPages() {
+    public int getCountPages() {
         return countPages;
     }
 
-    String getName(){
+    @SuppressWarnings("WeakerAccess")
+    public String getName(){
         return name;
     }
 }

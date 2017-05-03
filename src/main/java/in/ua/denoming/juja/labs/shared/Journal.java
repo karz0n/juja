@@ -15,11 +15,11 @@ public class Journal extends Issue {
 
     @Override
     public String toString() {
-        return getClass().getSimpleName() + "{" +
-            "name=" + getName() +
-            ",countPages=" + getCountPages() +
-            ",year=" + yearJournal +
-            ",number=" + numberJournal + "}";
+        return getClass().getSimpleName() + "{"
+            + "name=" + getName()
+            + ",countPages=" + getCountPages()
+            + ",year=" + yearJournal
+            + ",number=" + numberJournal + "}";
     }
 
     @Override

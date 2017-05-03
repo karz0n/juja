@@ -12,7 +12,6 @@ public class App {
             new Journal("Journal 3", 18, "2015", "12"),
             new Book("Book 1", 200, "Samuel")
         };
-
         System.out.println(Library.printCatalog(issues));
     }
 }

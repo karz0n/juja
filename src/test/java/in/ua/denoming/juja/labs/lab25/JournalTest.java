@@ -4,6 +4,7 @@ import in.ua.denoming.juja.labs.shared.Issue;
 import in.ua.denoming.juja.labs.shared.Journal;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 import org.junit.jupiter.api.Test;
 
 class JournalTest {
@@ -15,8 +16,14 @@ class JournalTest {
         String testNumber = "0";
 
         Issue testJournal = new Journal(testName, testPageCount, testYear, testNumber);
-        assertEquals(
-            String.format("Journal{name=%s,countPages=%s,year=%s,number=%s}", testName, testPageCount, testYear, testNumber),
-            testJournal.toString());
+
+        String expectedString = String.format(
+            "Journal{name=%s,countPages=%s,year=%s,number=%s}",
+            testName, testPageCount, testYear, testNumber
+        );
+        String actualString = testJournal.toString();
+
+        assertNotNull(actualString);
+        assertEquals(expectedString, actualString);
     }
 }
