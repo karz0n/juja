@@ -1,5 +1,7 @@
 package in.ua.denoming.juja.labs.lab29;
 
+import in.ua.denoming.juja.labs.shared.Tanker;
+
 /**
  * juja: in.ua.denoming.juja.labs.lab29
  * User: DENIS

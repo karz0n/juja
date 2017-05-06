@@ -1,4 +1,4 @@
-package in.ua.denoming.juja.labs.lab28;
+package in.ua.denoming.juja.labs.shared;
 
 import in.ua.denoming.juja.labs.shared.AbstractShip;
 
