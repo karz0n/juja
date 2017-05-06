@@ -6,7 +6,7 @@ public abstract class AbstractShip {
     private float width;
     private float displacement;
 
-    public AbstractShip(String name, float length, float width, float displacement) {
+    AbstractShip(String name, float length, float width, float displacement) {
         this.name = name;
         this.length = length;
         this.width = width;
@@ -21,10 +21,10 @@ public abstract class AbstractShip {
 
     @Override
     public String toString() {
-        return getClass().getSimpleName() + "{"
-            + "name='" + name + '\''
-            + ", length=" + length
-            + ", width=" + width
-            + ", displacement=" + displacement + '}';
+        return "{"
+            + "Name=" + name
+            + "Length=" + length
+            + "Width=" + width
+            + "Displacement=" + displacement + '}';
     }
 }
