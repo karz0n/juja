@@ -1,5 +1,7 @@
 package in.ua.denoming.juja.labs.shared;
 
+import java.util.Comparator;
+
 public abstract class AbstractShip {
     private String name;
     private float length;
@@ -27,4 +29,6 @@ public abstract class AbstractShip {
             + "Width=" + width
             + "Displacement=" + displacement + '}';
     }
+
+    public static Comparator<AbstractShip> PaymentComparator = (o1, o2) -> (int) Math.signum(o1.calculatePayment() - o2.calculatePayment());
 }
