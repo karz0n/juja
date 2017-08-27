@@ -1,7 +1,7 @@
 package in.ua.denoming.juja.labs.lab24;
 
-import in.ua.denoming.juja.labs.shared.Issue;
-import in.ua.denoming.juja.labs.shared.Book;
+import in.ua.denoming.juja.shared.Issue;
+import in.ua.denoming.juja.shared.Book;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;

@@ -1,6 +1,6 @@
 package in.ua.denoming.juja.labs.lab26;
 
-import in.ua.denoming.juja.labs.shared.Issue;
+import in.ua.denoming.juja.shared.Issue;
 
 class Library {
     static String printCatalog(Issue[] catalog) {

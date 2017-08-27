@@ -1,6 +1,6 @@
 package in.ua.denoming.juja.labs.lab31;
 
-import in.ua.denoming.juja.labs.shared.AbstractShip;
+import in.ua.denoming.juja.shared.AbstractShip;
 
 import java.util.Arrays;
 

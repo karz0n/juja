@@ -1,6 +1,6 @@
 package in.ua.denoming.juja.labs.lab24;
 
-import in.ua.denoming.juja.labs.shared.Book;
+import in.ua.denoming.juja.shared.Book;
 
 public class App {
     public static void main(String[] args) {

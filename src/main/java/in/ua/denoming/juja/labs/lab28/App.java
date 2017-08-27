@@ -1,6 +1,6 @@
 package in.ua.denoming.juja.labs.lab28;
 
-import in.ua.denoming.juja.labs.shared.Liner;
+import in.ua.denoming.juja.shared.Liner;
 
 public class App {
     public static void main(String[] args) {

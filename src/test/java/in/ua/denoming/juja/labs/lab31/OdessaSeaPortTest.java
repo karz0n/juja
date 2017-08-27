@@ -1,21 +1,14 @@
 package in.ua.denoming.juja.labs.lab31;
 
-import in.ua.denoming.juja.labs.shared.AbstractShip;
-import in.ua.denoming.juja.labs.shared.Liner;
-import in.ua.denoming.juja.labs.shared.Tanker;
-import in.ua.denoming.juja.labs.shared.Cargo;
+import in.ua.denoming.juja.shared.AbstractShip;
+import in.ua.denoming.juja.shared.Liner;
+import in.ua.denoming.juja.shared.Tanker;
+import in.ua.denoming.juja.shared.Cargo;
 
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-/**
- * juja: in.ua.denoming.juja.labs.lab31
- * User: DENIS
- * Date: 05.05.2017
- * Time: 23:18
- */
 class OdessaSeaPortTest {
     private OdessaSeaPort odessaSeaPort;
 

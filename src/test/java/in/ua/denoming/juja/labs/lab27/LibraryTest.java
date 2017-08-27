@@ -1,6 +1,6 @@
 package in.ua.denoming.juja.labs.lab27;
 
-import in.ua.denoming.juja.labs.shared.Issue;
+import in.ua.denoming.juja.shared.Issue;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
@@ -16,7 +16,7 @@ class LibraryTest {
             new Issue("TestNameIssue4", 3),
         };
 
-        String expectedPrint = "name=TestNameIssue1,countPages=100";
+        String expectedPrint = "Issue{name=TestNameIssue1,countPages=100}";
         String actualPrint = Library.getIssueWithCountPagesMoreN(issues, 50);
         assertNotNull(actualPrint);
         assertEquals(expectedPrint, actualPrint);
