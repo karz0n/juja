@@ -5,8 +5,8 @@ import java.util.Arrays;
 public class BasicArray<T extends Comparable<T>> implements Array<T> {
     private Element<T>[] elements;
 
-    @SuppressWarnings("unchecked")
-    BasicArray(int size) throws IllegalArgumentException {
+    @SuppressWarnings({"unchecked", "WeakerAccess"})
+    public BasicArray(int size) throws IllegalArgumentException {
         if (size < 0) {
             throw new IllegalArgumentException("argument 'size' must be greater or equal than 0");
         }
@@ -17,16 +17,16 @@ public class BasicArray<T extends Comparable<T>> implements Array<T> {
         }
     }
 
-    @SuppressWarnings("unchecked")
-    BasicArray(T[] values) {
+    @SuppressWarnings({"unchecked", "WeakerAccess"})
+    public BasicArray(T[] values) {
         elements = new Element[values.length];
         for (int i = 0; i < values.length; i++) {
             elements[i] = new Element<>(i, values[i]);
         }
     }
 
-    @SuppressWarnings("unchecked")
-    BasicArray(Array<T> other) {
+    @SuppressWarnings({"unchecked", "WeakerAccess"})
+    public BasicArray(Array<T> other) {
         elements = new Element[other.size()];
         for (int i = 0; i < other.size(); i++) {
             elements[i] = other.get(i);

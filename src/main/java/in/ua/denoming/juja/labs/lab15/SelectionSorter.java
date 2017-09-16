@@ -5,19 +5,19 @@ import in.ua.denoming.juja.shared.Sorter;
 
 public class SelectionSorter implements Sorter {
     @Override
-    public void sort(Array inputArray) {
-        int size = inputArray.size();
+    public void sort(Array input) {
+        int size = input.size();
 
         int index;
         for (int i = 0; i < size - 1; i++) {
             index = i;
             for (int j = i + 1; j < size; j++) {
-                if (inputArray.compare(index, j) > 0) {
+                if (input.compare(index, j) > 0) {
                     index = j;
                 }
             }
             if (index != i) {
-                inputArray.swap(index, i);
+                input.swap(index, i);
             }
         }
 
