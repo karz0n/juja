@@ -9,7 +9,7 @@ public class SimpleArrayList<E> implements SimpleList<E> {
     private E[] data;
     private int size = 0;
 
-    private class SimpleIterator implements Iterator {
+    private class SimpleArrayListIterator implements Iterator<E> {
         int last = -1;
 
         @Override
@@ -19,7 +19,7 @@ public class SimpleArrayList<E> implements SimpleList<E> {
         }
 
         @Override
-        public Object next() {
+        public E next() {
             if (hasNext()) {
                 return get(++last);
             }
@@ -94,7 +94,7 @@ public class SimpleArrayList<E> implements SimpleList<E> {
 
     @Override
     public Iterator<E> iterator() {
-        return new SimpleIterator();
+        return new SimpleArrayListIterator();
     }
 
     @Override
